@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-image: url("/static/images/bluebackground.jpg");
+    background-size: cover;
+    background-position: center;
+}
+body {
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+}
+.container {
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    height: 200px;
+    /* Center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bot {
+    width: 10%;
+    height: auto;
+  }
