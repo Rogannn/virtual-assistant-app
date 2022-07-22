@@ -1,5 +1,5 @@
 from neuralintents import GenericAssistant
-from assistant import mappings
+from app import mappings
 
 
 assistant = GenericAssistant('intents.json', intent_methods=mappings)

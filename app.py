@@ -5,7 +5,6 @@ from tkinter import messagebox
 from tkinter.font import Font
 from datetime import datetime
 import pyttsx3 as tts
-import random
 import datetime
 import speech_recognition as sr
 import threading
@@ -44,19 +43,9 @@ CLEAR_BTN_RELX = 0.6
 REPEAT_BTN_RELY = 0.17
 REPEAT_BTN_RELX = 0.6
 
-
-# POSSIBLE REASON FOR SLOW OPENING OF APP
-# THE NLTK DOWNLOADS PUNKT AND WORDNET MIGHT BE RESPONSIBLE
-# THEY MIGHT BE DOWNLOADING EVERY RUN
-
 def hello():
-    choices = [
-        "Hello, what would you like to ask?",
-        "Greetings, what would you like to ask?",
-        "Hi, what would you like to ask?"
-    ]
-    chosen_statement = random.choice(choices)
-    aiResponse(chosen_statement)
+    response = "Greetings, what would you like to ask?"
+    aiResponse(response)
 
 
 def current_date():
@@ -66,12 +55,8 @@ def current_date():
 
 
 def howisit():
-    choices = [
-        "I'm fine, thank you.",
-        "I'm good, thank you for asking."
-    ]
-    chosen_statement = random.choice(choices)
-    aiResponse(chosen_statement)
+    response = "I'm good, thank you for asking"
+    aiResponse(response)
 
 
 def timeCheck():
@@ -81,12 +66,8 @@ def timeCheck():
 
 
 def gratitude():
-    choices = [
-        "Your welcome.",
-        "No problem."
-    ]
-    chosen_statement = random.choice(choices)
-    aiResponse(chosen_statement)
+    response = "Your welcome"
+    aiResponse(response)
 
 
 def courses():
@@ -113,12 +94,8 @@ def teachersToAsk():
 
 
 def exitApp():
-    choices = ["Good bye!",
-               "See you soon!",
-               "Have a nice day!"
-               ]
-    chosen_statement = random.choice(choices)
-    aiResponse(chosen_statement)
+    response = "Have a nice day!"
+    aiResponse(response)
 
 
 mappings = {
